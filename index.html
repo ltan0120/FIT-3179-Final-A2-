@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Australian Workplace Injury Claims and Fatalities</title>
+  <title>Australian Workplace Injuries and Fatalities</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+
   <style>
     body {
       font-family: 'Manrope', sans-serif;
@@ -130,8 +131,6 @@
       line-height: 1.6;
     }
 
-
-
     @media (max-width: 1100px) {
       .split {
         flex-direction: column;
@@ -141,7 +140,6 @@
 </head>
 
 <body>
-
   <!-- Title -->
   <div class="title-box">
     <h1>Australian Workplace Injuries and Fatalities</h1>
@@ -168,11 +166,12 @@
         <p>Despite our current workplace safety practices and laws, 
           workplace <strong style="color: #00008b;">injuries</strong> and <strong style="color: #8b0000;">fataltiies</strong> are still a prominent risk that workers have to face each day. 
           The line chart on the left shows the steady trend of increasing injuries and fatalities in Australian workforces from 2018-2022. 
-          </p>
+        </p>
         <p>
           This trend is alarming, and highlights the need for greater analysis into our workforces to allow for safer working environments 
           for everyone. In this visualisation, we aim to uncover more insights into how these injuries occur, where these occur
-          and who's most at risk to help prompt greater safety measures and policy changes in these areas.</p>
+          and who's most at risk to help prompt greater safety measures and policy changes in these areas.
+        </p>
           
       </div>
     </div>
@@ -184,15 +183,18 @@
     <div class="left" style="flex:2; display: flex; flex-direction: column; gap: 20px;">
       <div class="text-placeholder" style="flex: 1;">
         <h3>How and Where Are People Getting Injured?</h3>
-        <p>Firstly, we examine the most common methods of injuries and at which bodily region workers are injured the most.</p>
+        <p>Firstly, we examine the most common methods of injuries and at which bodily region workers are injured the most.
+        </p>
         
         <p>
           From the bar chart below, we can see that <strong style="color: #1e8449;">Falls</strong> dominate as the the highest method of injury, followed by being <strong style="color: #3a4991;">Hit By A Moving Object</strong>. 
-          The chart on the right highlights which regions workers are most likely to face injuries. We can see that <strong style="color: rgb(29, 27, 27);">Hand and Wrist, and Back </strong>injuries are most prevalent.</p>
+          The chart on the right highlights which regions workers are most likely to face injuries. We can see that <strong style="color: rgb(29, 27, 27);">Hand and Wrist, and Back </strong>injuries are most prevalent.
+        </p>
 
         <p>
             This signals the need for improved protective gear, such as gloves, and greater emphasis on training to help workers avoid straining their bodies. Programs could include proper lifting techniques, and
-            and strategies to reduce physical stress to help prevent common injuries to the hands and back.</p>
+            and strategies to reduce physical stress to help prevent common injuries to the hands and back.
+        </p>
 
       </div>
       <div id="chart2" class="chart-placeholder" style="flex: 2; min-height: 0;"></div>
@@ -214,13 +216,13 @@
         <h3>Injuries and Fatalities by Industry and State</h3>
         <p>Now we compare workplace injury and fatality rates across Victorian local government areas and workplace industries to identify high-risk sectors.  Use the year filter to explore how these figures have changed from 2018 to 2022.</p>
 
-        <hr style="border: 0; border-top: 1px solid #ccc; margin: 1.2em 0;">
+        <hr style="border: 0; border-top: 1px solid #ccc;">
         
         <h5>Industry Focus</h5>
         <p>The dual pie chart illustrates the contrast between the number of injuries and fatalities across industries. On average, <strong style="color: #3a4991;">Health Care and Social Assistance</strong> records the highest number of injuries, 
           while <strong style="color: #9bbb59;">Construction</strong> experiences the greatest number of workplace fatalities from 2018 to 2022.</p>
         
-        <hr style="border: 0; border-top: 1px solid #ccc; margin: 1.2em 0;">
+        <hr style="border: 0; border-top: 1px solid #ccc">
 
         <h5>State Focus</h5>
         <p>The map chart highlights the states with the highest fatality rates per population.</p>
@@ -258,7 +260,7 @@
         <p>The chart to the right shows what happens after an injury. Use the filter to view the decision workers make and their proportions. More women cease working entirely, while more men are laid off. Among those who stay in the workforce, 
           <strong style="color: black;">88% of men</strong> to work compared to <strong style="color: black;">80% of women</strong>, showing differences in recovery and support.</p>
         
-        <hr style="border: 0; border-top: 1px solid #ccc; margin: 1.2em 0;">
+        <hr style="border: 0; border-top: 1px solid #ccc;">
 
         <h3>What Needs to Be Done?</h3>
         <p>In summary, the key trends from this visualisation show that falls and back or hand injuries are common, with construction and health care carrying the highest risks. Males are more affected, highlighting the real human cost behind these numbers. 
@@ -272,7 +274,6 @@
       <div id="chart6" class="chart-placeholder"></div>
     </div>
   </div>
-
 
   <!-- Box 6 Details -->
   <div class="info-box">
@@ -381,55 +382,55 @@
     };
 
     const spec2 = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Methods of Injury",
-    "width": 350,
-    "height": 250,
-    "data": {
-      "url": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/Chart%202%20-%20Mechanism%20of%20Injury%20Stacked%20Bar.csv"
-    },
-    "mark": {
-      "type": "bar",
-      "tooltip": true
-    },
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal",
-        "axis": {"title": "Year", "labelAngle": 0}
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "title": "Methods of Injury",
+      "width": 350,
+      "height": 250,
+      "data": {
+        "url": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/Chart%202%20-%20Mechanism%20of%20Injury%20Stacked%20Bar.csv"
       },
-      "xOffset": {
-        "field": "Mechanism of Injury",
-        "type": "nominal",
-        "sort": ["Falls", "Hit By Moving Object", "Vehicle Accidents", "Chemicals", "Heat or Electricity"]
+      "mark": {
+        "type": "bar",
+        "tooltip": true
       },
-      "y": {
-        "field": "Count",
-        "type": "quantitative",
-        "axis": {"title": "Number of Injuries"}
-      },
-      "color": {
-        "field": "Mechanism of Injury",
-        "type": "nominal",
-        "scale": {
-          "domain": ["Falls", "Hit By Moving Object", "Vehicle Accidents", "Chemicals", "Heat or Electricity"],
-          "range": ["#1e8449", "#3a4991", "#f5b73b", "#fa1b35", "#809191"] 
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "axis": {"title": "Year", "labelAngle": 0}
         },
-        "legend": {"title": "Method of Injury"}
+        "xOffset": {
+          "field": "Mechanism of Injury",
+          "type": "nominal",
+          "sort": ["Falls", "Hit By Moving Object", "Vehicle Accidents", "Chemicals", "Heat or Electricity"]
+        },
+        "y": {
+          "field": "Count",
+          "type": "quantitative",
+          "axis": {"title": "Number of Injuries"}
+        },
+        "color": {
+          "field": "Mechanism of Injury",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Falls", "Hit By Moving Object", "Vehicle Accidents", "Chemicals", "Heat or Electricity"],
+            "range": ["#1e8449", "#3a4991", "#f5b73b", "#fa1b35", "#809191"] 
+          },
+          "legend": {"title": "Method of Injury"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal", "title": "Year"},
+          {"field": "Mechanism of Injury", "type": "nominal", "title": "Method"},
+          {"field": "Count", "type": "quantitative", "title": "Number of Injuries", "format": ","}
+        ]
       },
-      "tooltip": [
-        {"field": "Year", "type": "ordinal", "title": "Year"},
-        {"field": "Mechanism of Injury", "type": "nominal", "title": "Method"},
-        {"field": "Count", "type": "quantitative", "title": "Number of Injuries", "format": ","}
-      ]
-    },
-    "config": {
-      "bar": {"binSpacing": 10},
-      "background": "white",
-      "axis": {"labelColor": "#333", "titleColor": "#333"},
-      "font": "Manrope"
-    }
-  };
+      "config": {
+        "bar": {"binSpacing": 10},
+        "background": "white",
+        "axis": {"labelColor": "#333", "titleColor": "#333"},
+        "font": "Manrope"
+      }
+    };
 
     const spec3 = {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -469,9 +470,9 @@
             {"filter": "datum.Year == 2022"},
             {"calculate": "replace(datum['% of Year Total'], '%', '')", "as": "PercentageValue"},
             {"calculate": "datum['PercentageValue'] + '%'", "as": "DisplayPercentage"},
-            // Scale x positions horizontally
+            // Scale x positions
             {"calculate": "(datum['Body Location'] == 'Cranium' ? 243 : datum['Body Location'] == 'Neck' ? 620 : datum['Body Location'] == 'Shoulder' ? 147 : datum['Body Location'] == 'Back - Upper Or Lower' ? 670 : datum['Body Location'] == 'Hand And Wrist' ? 180 : datum['Body Location'] == 'Knee' ? 645 : datum['Body Location'] == 'Foot And Ankle' ? 250 : 0) * 0.65", "as": "x"},
-            // Scale y positions vertically
+            // Scale y positions
             {"calculate": "(datum['Body Location'] == 'Cranium' ? 805 : datum['Body Location'] == 'Neck' ? 694 : datum['Body Location'] == 'Shoulder' ? 637 : datum['Body Location'] == 'Back - Upper Or Lower' ? 545 : datum['Body Location'] == 'Hand And Wrist' ? 396 : datum['Body Location'] == 'Knee' ? 219 : datum['Body Location'] == 'Foot And Ankle' ? 50 : 0) * 0.65625", "as": "y"}
           ],
           "mark": {
@@ -635,7 +636,7 @@
               "title": {"text": "Workplace Fatalities per Victorian Local Government Area", "fontSize": 16, "fontWeight": "bold", "anchor": "middle", "dy": -10, "dx": 50},
               "width": 580,
               "height": 400,
-              "view": {"stroke": null, "fill": "#cfe8ff"}, 
+              "view": {"stroke": null, "fill": "#cfe8ff"},
               "projection": {"type": "mercator", "center": [145.8, -36.7], "scale": 3200, "translate": [300, 200]},
               "layer": [
                 {"data": {"graticule": {"step": [2,2]}}, "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.2}},
@@ -689,192 +690,191 @@
               "encoding": {"text": {"value": "NOTE: Local Government Areas coloured in white have no data"}}
             }
           ], 
-          "spacing": 300
         }
       ]
     };
 
     const spec5 = {
-          "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-          "title": {
-            "text": "Workplace Injuries vs Fatalities by Gender and Age Group (2018-2022)",
-            "anchor": "middle",
-            "fontWeight": "bold"
-          },
-          "config": {
-            "font": "Manrope",
-            "axis": {"labelColor": "#333", "titleColor": "#333"},
-          },
-          "width": 500,
-          "data": {
-            "url": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/Chart%206%20-%20Gender%20Split%20Fatalities%20vs%20Claims.csv"
-          },
-          "params": [
-            {
-              "name": "selected_measure",
-              "value": "Workplace Claims",
-              "bind": {
-                "input": "select",
-                "options": ["Workplace Claims", "Workplace Fatalities"],
-                "labels": ["Number of Injuries", "Number of Fatalities"],
-                "name": "Select Measure: "
-              }
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "title": {
+          "text": "Workplace Injuries vs Fatalities by Gender and Age Group (2018-2022)",
+          "anchor": "middle",
+          "fontWeight": "bold"
+        },
+        "config": {
+          "font": "Manrope",
+          "axis": {"labelColor": "#333", "titleColor": "#333"},
+        },
+        "width": 500,
+        "data": {
+          "url": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/Chart%206%20-%20Gender%20Split%20Fatalities%20vs%20Claims.csv"
+        },
+        "params": [
+          {
+            "name": "selected_measure",
+            "value": "Workplace Claims",
+            "bind": {
+              "input": "select",
+              "options": ["Workplace Claims", "Workplace Fatalities"],
+              "labels": ["Number of Injuries", "Number of Fatalities"],
+              "name": "Select Measure: "
             }
-          ],
-          "vconcat": [
-            {
-              "layer": [
-                {
-                  "mark": {"type": "image", "width": 50, "height": 50},
-                  "encoding": {
-                    "x": {"value": 140},
-                    "y": {"value": 35},
-                    "url": {"value": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/female%20icon.png"}
-                  }
-                },
-                {
-                  "mark": {"type": "text", "text": "Female", "align": "center", "fontWeight": "bold"},
-                  "encoding": {
-                    "x": {"value": 140},
-                    "y": {"value": 95},
-                    "color": {"value": "#e377c2"}
-                  }
-                },
-                {
-                  "mark": {"type": "image", "width": 50, "height": 50},
-                  "encoding": {
-                    "x": {"value": 440},
-                    "y": {"value": 35},
-                    "url": {"value": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/male%20icon.png"}
-                  }
-                },
-                {
-                  "mark": {"type": "text", "text": "Male", "align": "center", "fontWeight": "bold"},
-                  "encoding": {
-                    "x": {"value": 440},
-                    "y": {"value": 95},
-                    "color": {"value": "#1f77b4"}
-                  }
+          }
+        ],
+        "vconcat": [
+          {
+            "layer": [
+              {
+                "mark": {"type": "image", "width": 50, "height": 50},
+                "encoding": {
+                  "x": {"value": 140},
+                  "y": {"value": 35},
+                  "url": {"value": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/female%20icon.png"}
                 }
-              ],
-            },
-            {
-              "hconcat": [
-                {
-                  "width": 240,
-                  "transform": [
-                    {"filter": "datum.Gender == 'Female'"},
-                    {"filter": "datum.Value == selected_measure"},
-                    {"calculate": "-datum['Total']", "as": "mirrored_total"},
-                    {
-                      "calculate": "selected_measure == 'Workplace Claims' ? 'Number of Injuries' : 'Number of Fatalities'",
-                      "as": "Measure"
-                    }
-                  ],
-                  "layer": [
-                    {
-                      "mark": {"type": "bar", "size": 19},
-                      "encoding": {
-                        "y": {
-                          "field": "Age",
-                          "type": "ordinal",
-                          "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
-                          "axis": null
-                        },
-                        "x": {
-                          "aggregate": "sum",
-                          "field": "mirrored_total",
-                          "title": {"expr": "selected_measure"},
-                          "scale": {
-                            "domain": {
-                              "expr": "selected_measure == 'Workplace Claims' ? [-22000, 0] : [-85, 0]"
-                            }
-                          },
-                          "axis": {
-                            "format": "d",
-                            "labelExpr": "abs(datum.value)",
-                            "tickCount": 5
+              },
+              {
+                "mark": {"type": "text", "text": "Female", "align": "center", "fontWeight": "bold"},
+                "encoding": {
+                  "x": {"value": 140},
+                  "y": {"value": 95},
+                  "color": {"value": "#e377c2"}
+                }
+              },
+              {
+                "mark": {"type": "image", "width": 50, "height": 50},
+                "encoding": {
+                  "x": {"value": 440},
+                  "y": {"value": 35},
+                  "url": {"value": "https://raw.githubusercontent.com/ltan0120/Final-3179/main/male%20icon.png"}
+                }
+              },
+              {
+                "mark": {"type": "text", "text": "Male", "align": "center", "fontWeight": "bold"},
+                "encoding": {
+                  "x": {"value": 440},
+                  "y": {"value": 95},
+                  "color": {"value": "#1f77b4"}
+                }
+              }
+            ],
+          },
+          {
+            "hconcat": [
+              {
+                "width": 240,
+                "transform": [
+                  {"filter": "datum.Gender == 'Female'"},
+                  {"filter": "datum.Value == selected_measure"},
+                  {"calculate": "-datum['Total']", "as": "mirrored_total"},
+                  {
+                    "calculate": "selected_measure == 'Workplace Claims' ? 'Number of Injuries' : 'Number of Fatalities'",
+                    "as": "Measure"
+                  }
+                ],
+                "layer": [
+                  {
+                    "mark": {"type": "bar", "size": 19},
+                    "encoding": {
+                      "y": {
+                        "field": "Age",
+                        "type": "ordinal",
+                        "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
+                        "axis": null
+                      },
+                      "x": {
+                        "aggregate": "sum",
+                        "field": "mirrored_total",
+                        "title": {"expr": "selected_measure"},
+                        "scale": {
+                          "domain": {
+                            "expr": "selected_measure == 'Workplace Claims' ? [-22000, 0] : [-85, 0]"
                           }
                         },
-                        "color": {
-                          "field": "Gender",
-                          "scale": {"range": ["#e377c2", "#1f77b4"]},
-                          "legend": null
-                        },
-                        "tooltip": [
-                          {"field": "Gender"},
-                          {"field": "Measure"},
-                          {"field": "Age", "title": "Age Group"},
-                          {"field": "Total", "title": "Total", "format": ","},
-                        ],
-                      }
+                        "axis": {
+                          "format": "d",
+                          "labelExpr": "abs(datum.value)",
+                          "tickCount": 5
+                        }
+                      },
+                      "color": {
+                        "field": "Gender",
+                        "scale": {"range": ["#e377c2", "#1f77b4"]},
+                        "legend": null
+                      },
+                      "tooltip": [
+                        {"field": "Gender"},
+                        {"field": "Measure"},
+                        {"field": "Age", "title": "Age Group"},
+                        {"field": "Total", "title": "Total", "format": ","},
+                      ],
                     }
-                  ]
-                },
-                {
-                  "width": 30,
-                  "view": {"stroke": null},
-                  "mark": {"type": "text", "align": "center"},
-                  "encoding": {
-                    "y": {
-                      "field": "Age",
-                      "type": "ordinal",
-                      "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
-                      "axis": null
-                    },
-                    "text": {"field": "Age"}
                   }
-                },
-                {
-                  "width": 240,
-                  "transform": [
-                    {"filter": "datum.Gender == 'Male'"},
-                    {"filter": "datum.Value == selected_measure"},
-                    {
-                      "calculate": "selected_measure == 'Workplace Claims' ? 'Number of Injuries' : 'Number of Fatalities'",
-                      "as": "Measure"
-                    }
-                  ],
-                  "layer": [
-                    {
-                      "mark": {"type": "bar", "size": 19},
-                      "encoding": {
-                        "y": {
-                          "field": "Age",
-                          "type": "ordinal",
-                          "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
-                          "axis": null
-                        },
-                        "x": {
-                          "aggregate": "sum",
-                          "field": "Total",
-                          "title": {"expr": "selected_measure"},
-                          "scale": {
-                            "domain": {
-                              "expr": "selected_measure == 'Workplace Claims' ? [0, 22000] : [0, 85]"
-                            }
-                          },
-                          "axis": {"format": "d", "tickCount": 5}
-                        },
-                        "color": {
-                          "field": "Gender",
-                          "scale": {"range": ["#e377c2", "#1f77b4"]},
-                          "legend": null
-                        },
-                        "tooltip": [
-                          {"field": "Gender"},
-                          {"field": "Measure"},
-                          {"field": "Age", "title": "Age Group"},
-                          {"field": "Total", "title": "Total", "format": ","},
-                        ]
-                      }
-                    }
-                  ]
+                ]
+              },
+              {
+                "width": 30,
+                "view": {"stroke": null},
+                "mark": {"type": "text", "align": "center"},
+                "encoding": {
+                  "y": {
+                    "field": "Age",
+                    "type": "ordinal",
+                    "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
+                    "axis": null
+                  },
+                  "text": {"field": "Age"}
                 }
-              ]
-            }
-          ]
-        };
+              },
+              {
+                "width": 240,
+                "transform": [
+                  {"filter": "datum.Gender == 'Male'"},
+                  {"filter": "datum.Value == selected_measure"},
+                  {
+                    "calculate": "selected_measure == 'Workplace Claims' ? 'Number of Injuries' : 'Number of Fatalities'",
+                    "as": "Measure"
+                  }
+                ],
+                "layer": [
+                  {
+                    "mark": {"type": "bar", "size": 19},
+                    "encoding": {
+                      "y": {
+                        "field": "Age",
+                        "type": "ordinal",
+                        "sort": ["15 - 24","25 - 34","35 - 44","45 - 54","55 - 64","65+"],
+                        "axis": null
+                      },
+                      "x": {
+                        "aggregate": "sum",
+                        "field": "Total",
+                        "title": {"expr": "selected_measure"},
+                        "scale": {
+                          "domain": {
+                            "expr": "selected_measure == 'Workplace Claims' ? [0, 22000] : [0, 85]"
+                          }
+                        },
+                        "axis": {"format": "d", "tickCount": 5}
+                      },
+                      "color": {
+                        "field": "Gender",
+                        "scale": {"range": ["#e377c2", "#1f77b4"]},
+                        "legend": null
+                      },
+                      "tooltip": [
+                        {"field": "Gender"},
+                        {"field": "Measure"},
+                        {"field": "Age", "title": "Age Group"},
+                        {"field": "Total", "title": "Total", "format": ","},
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      };
 
     const spec6 = {
       "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -929,11 +929,11 @@
           "type": "nominal",
           "scale": {
             "range": [
-              "#809191", // blue for "Still Working"
-              "#4bacc6", // green
-              "#9bbb59", // orange
-              "#f79646", // red
-              "#c0504d", // purple
+              "#809191", 
+              "#4bacc6", 
+              "#9bbb59", 
+              "#f79646", 
+              "#c0504d",
             ]
           },
           "legend": {"title": "Reason"}
@@ -946,8 +946,6 @@
         ]
       }
     };
-
-
 
 
   vegaEmbed('#chart1', spec1, {actions: false});  
